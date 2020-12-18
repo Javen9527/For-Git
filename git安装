@@ -1,0 +1,27 @@
+MAC使用Git教程
+
+0.MAC安装Git
+	·查看是否已经安装：git -version
+	·通过homebrew安装git：
+		①安装homebrew：/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+		②安装git：brew install git
+	·通过Xcode安装git：
+		①appStore中下载安装Xcode(Xcode中集成了git)
+		②Xcode->Preference->Downloads->Command line tools->install
+
+1.创建ssh key，配置git
+	·git config --global user.name "xxx name"
+	·git config --global user.email "xxx email"
+	·git config --list ：查看当前的配置
+	·ssh-keygen -t -rsa -C "xxx email" ：生成密钥.ssh/路径下生成两个文件：id_rsa id_rsa.pub
+	·cat查看（复制）id_rsa.pub，在github网站上：setting->New ssh key->添加key即可
+	·ssh -T git@github.com : 验证链接
+
+2.通过命令行新建repository
+	echo "# For-Git" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git branch -M main
+	git remote add origin git@github.com:Javen9527/For-Git.git
+	git push -u origin main
