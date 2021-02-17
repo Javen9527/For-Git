@@ -34,5 +34,8 @@
 三、远程版本库
 
    1. 远程版本库
+   
+   2. github使用技巧
+      ·在github.com/后面加trending可以查看当前热点
 
 
