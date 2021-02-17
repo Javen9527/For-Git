@@ -1,3 +1,5 @@
+中文书籍链接：https://git-scm.com/book/zh/v2
+
 一、本地仓库
 
    1. git的三个区：工作区 + 暂存区 + 仓库
