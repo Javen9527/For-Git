@@ -1,0 +1,8 @@
+https://blog.csdn.net/gdutxiaoxu/article/details/89606676
+
+1.打补丁： git diff > 文件名.patch
+
+2.用补丁：  
+        git apply --stat 文件名.patch
+        git apply --check 文件名.patch
+        git am --signoff < 文件名.patch
